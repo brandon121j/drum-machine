@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     font-style: italic;
     font-weight: bold;
     margin: 24px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 .metronome {
@@ -42,7 +43,7 @@ body {
 .background-right {
     border-bottom: 400px solid #e07a5f;
     border-right: 100px solid transparent;
-}
+} 
 
 .core {
     flex: 1;
@@ -69,4 +70,52 @@ body {
     left: 165px;
     transform-origin: bottom center;
     animation: tick 1200ms ease-in-out infinite;
+}
+
+input[type=number] {
+    width: 45px;
+}
+
+label {
+    text-align: center;
+    opacity: .5;
+    cursor: pointer;
+}
+
+label:hover {
+    opacity: 1;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.metroLabel {
+    position: relative;
+    left: 15px;
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+#metronome {
+    visibility: hidden;
+}
+
+button {
+    padding: 15px;
+    width: 200px;
+    border: 1px solid yellow;
+    color: yellow;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    font-style: bold;
+}
+
+button:hover {
+    background-color: yellow;
+    color: rgba(0,0,0,0.5);
+    transition: background-color 1s ;
+    transition: color 1s;
 }

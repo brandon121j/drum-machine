@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metronome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="toggler">
+        <div class="tickBox">
+            <input type="checkbox" id="metronome" value="metronome" checked='true'>
+            <label for="metronome" class="metroLabel">Metronome</label>
+        </div>
+        <div class="tickBox">
+            <input type="checkbox" id="kick-drum" value="kick-drum">
+            <input type="number" id="kick-drums" value="kick-drums" max="4" min="0">
+            <label for="kick-drum" id="kickLabel">Kick drum</label>
+        </div>
+        <div class="tickBox">
+            <input type="checkbox" id="snare-drum" value="snare-drum">
+            <input type="number" id="snare-drums" value="snare-drums" max="4" min="0">
+            <label for="snare-drum" id="snareLabel">Snare drum</label>
+        </div>
+        <div class="tickBox">
+            <input type="checkbox" id="hat" value="hat">
+            <input type="number" id="hats" value="hats" max="4" min="0">
+            <label for="hat" id="hatLabel">Hi-hat</label>
+        </div>
+    </div>
     <div class="tip">
-        (Click anywhere to hear sound...)
+        <!-- (Click anywhere to hear sound...) -->
     </div>
 
     <div class="metronome">
@@ -20,7 +44,12 @@
         <div class="background-right"></div>
         <div class="arm"></div>
     </div>
-
+    <div class="counting">
+        <p>0</p>
+    </div>
+    <div class="dark">
+        <button>Cool Mode</button>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
